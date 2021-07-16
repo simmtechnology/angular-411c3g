@@ -1,0 +1,14 @@
+<table class="example-loading-shade">
+  <th>#</th>
+  <th>Reg. Number</th>
+  <th>Surname</th>
+  <th>First Name</th>
+  <th>Sex</th>
+  <tr *ngFor="let student of students; let i= index">
+    <td>{{i+1}}</td>
+    <td>{{student.regNumber}}</td>
+    <td>{{student.surname}}</td>
+    <td>{{student.firstName}}</td>
+    <td>{{student.gender}}</td>
+  </tr>
+</table>
